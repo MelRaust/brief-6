@@ -1,5 +1,8 @@
 
   <?php include("header.php");?>
+
+
+  <!--  Les categories en gras dans le tableaux   -->
     
     <section class="w-screen">
         <table class="w-full">
@@ -10,7 +13,64 @@
                 <th class="border border-black hover:bg-stone-500">Lien</th>
                 <th class="border border-black hover:bg-stone-500">ID_domaine</th>
             </tr>
- <!-- LIGNE 1-->
+ 
+ 
+                 
+            
+            <!-- Appel des tables de la base de donnée-->
+ 
+    <?php   
+    include("pdo.php");
+        // Affichage (SELECT) :
+        $result = $pdo->query("SELECT * FROM `categorie`");
+        $categorie = $result->fetchAll(PDO::FETCH_ASSOC); 
+
+        $result = $pdo->query("SELECT * FROM `favoris`");
+        $favoris = $result->fetchAll(PDO::FETCH_ASSOC);
+        
+        $result = $pdo->query("SELECT * FROM `domaine`");
+        $domaines = $result->fetchAll(PDO::FETCH_ASSOC); 
+       
+       
+    ?> 
+    <form action="" method="GET">
+     <select name="selection-cat" id="selection-cat">
+     <?php
+    foreach($categorie as $cat){
+        ?>
+        <option value="<?php echo $cat['id_cat']; ?>">
+            <?php echo $cat["nom_cat"]?>
+        </option> 
+        <?php } ?>
+</select>
+
+
+
+
+
+
+<select name="selection-dom" id="selection-dom">
+     <?php
+    foreach($domaines as $domaine){
+        ?>
+        <option value="<?php echo $domaine['id_dom']; ?>">
+            <?php echo $domaine["nom_dom"]?>
+        </option> 
+        <?php } ?>
+</select>
+
+
+        <button type="submit" class="border border-black ml-1.5">Rechercher</button>
+        <button type="submit" class="border border-black ml-1.5">Réinitialiser</button>
+
+    </form>
+
+    
+       
+<?php 
+    $result = $pdo->query("SELECT * FROM `categorie`");
+        $categorie = $result->fetchAll(PDO::FETCH_ASSOC); 
+        ?> 
  <?php   
     include("pdo.php");
         // Affichage (SELECT) :
@@ -18,6 +78,45 @@
         $favoris = $result->fetchAll(PDO::FETCH_ASSOC); 
 
     ?> 
+
+<?php
+    if (isset($_GET['id_cat'], $_GET['id_dom'])){
+
+    
+    $result = $pdo->query(" SELECT * FROM favoris INNER JOIN cat_fav ON favoris.id_fav = cat_fav.id_fav INNER JOIN categorie ON cat_fav.id_cat = categorie.id_cat WHERE categorie.id_cat =".$_GET['selection-cat']."");
+    $favoris = $result->fetchAll(PDO::FETCH_ASSOC); 
+
+}
+       
+        
+        
+ ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <?php
     foreach($favoris as $favori){
          
@@ -48,8 +147,7 @@
             <i class="fa-solid fa-trash-can"></i>
             </button>
             </td>
-
-                 
+         
         </tr>
         <?php
         }
