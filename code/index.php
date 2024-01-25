@@ -67,7 +67,7 @@
 
     <!-- création des bouttons qui vont applliquer la valeurs des filtres ou reinitialiser -->
 
-        <button type="submit" class=" border-black  ml-6 bg-green-400 rounded-xl px-4  text-center mt-6 "">Rechercher</button>
+        <button type="submit" class=" border-black rounded-xl ml-6 bg-green-400 rounded-xl px-4  text-center mt-6 "">Rechercher</button>
         <button type="submit" class=" border-black ml-6 bg-orange-500 rounded-xl px-4 text-center mt-6">Réinitialiser</button>
 
     </form>
@@ -157,7 +157,7 @@
 
 
         <tr class="border border-black odd:bg-white even:bg-slate-50 hover:bg-stone-500">
-            <td class="border border-black bg-violet-400 text-black text-center"> 
+            <td class="border border-black bg-yellow-400 text-black text-center"> 
                 <?php echo $favori['id_fav'] ?>
             </td>
             <td class="border border-black bg-violet-400 text-black text-center ">
@@ -169,7 +169,7 @@
             <td class="border border-black bg-violet-400 text-black text-center ">
                 <a href="<?php echo $favori['url'] ?>"><?php echo $favori['url'] ?></a>
             </td>
-            <td class="border border-black bg-violet-400 text-black text-center">
+            <td class="border border-black bg-yellow-400 text-black text-center">
             <?php echo $favori['id_dom'] ?>
             </td>
             <td class="border border-black bg-violet-400 text-black text-center">
