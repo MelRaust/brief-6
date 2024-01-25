@@ -157,7 +157,7 @@
 
 
         <tr class="border border-black odd:bg-white even:bg-slate-50 hover:bg-stone-500">
-            <td class="border border-black bg-yellow-400 text-black text-center"> 
+            <td class="border border-black bg-yellow-400 text-black text-center "> 
                 <?php echo $favori['id_fav'] ?>
             </td>
             <td class="border border-black bg-violet-400 text-black text-center ">
