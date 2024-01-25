@@ -6,7 +6,7 @@
   <script src="https://kit.fontawesome.com/0a3766d4f1.js" crossorigin="anonymous"></script>
   <link href="css/output.css" rel="stylesheet">
 </head>
-<body class="w-full">
+<body class="bg-slate-700">
 <header>
-        <h1>Mes favoris</h1>
+        <h1 class="text-lime-600 text-center" >Mes favoris</h1>
 </header>
