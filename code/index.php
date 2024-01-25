@@ -33,8 +33,11 @@
        
        
     ?> 
+    <div class="flex justify-center p-8">
+
+    
     <form action="" method="GET">
-     <select class="border-2 ml-20 border-black rounded-xl text-center bg-lime-400"  name="selection-cat" id="selection-cat">
+     <select class="border-2 ml-20 border-black rounded-xl text-center bg-lime-400 mt-6""  name="selection-cat" id="selection-cat">
         <option value="all">Tous afficher</option>
      <?php
     foreach($categorie as $cat){
@@ -61,12 +64,14 @@
         <?php } ?>
 </select>
 
+
     <!-- création des bouttons qui vont applliquer la valeurs des filtres ou reinitialiser -->
 
-        <button type="submit" class="border border-black ml-6 bg-green-400 rounded-xl mb-5 px-4 ml text-center">Rechercher</button>
-        <button type="submit" class="border border-black ml-6 bg-orange-500 rounded-xl px-4 text-center">Réinitialiser</button>
+        <button type="submit" class=" border-black  ml-6 bg-green-400 rounded-xl px-4  text-center mt-6 "">Rechercher</button>
+        <button type="submit" class=" border-black ml-6 bg-orange-500 rounded-xl px-4 text-center mt-6">Réinitialiser</button>
 
     </form>
+    </div>
 
     
        

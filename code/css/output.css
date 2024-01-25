@@ -612,6 +612,18 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-32 {
+  margin-left: 8rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.ml-44 {
+  margin-left: 11rem;
+}
+
 .flex {
   display: flex;
 }
@@ -700,6 +712,10 @@ video {
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-4 {

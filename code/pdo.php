@@ -13,6 +13,5 @@ try{
     echo "Echec de la connexion : %s\n" .$e->getMessage();
     exit();
 }
-echo "Connexion réussie"
 
 ?>
