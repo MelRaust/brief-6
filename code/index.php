@@ -146,7 +146,7 @@
 
     <?php
 
- // permet de crée une boucle qui rejoute les infos liées à favoris. sans le foreach une seule info afficher
+ // permet de crée une boucle qui rajoute les infos liées à favoris. sans le foreach une seule info afficher
 
     foreach($favoris as $favori){
          
