@@ -6,7 +6,7 @@
     
     <section class="bg-slate-500 ">
         <a href="create.php">
-          <button type="submit" class=" border-black rounded-xl ml-6 bg-green-400 rounded-xl px-4  text-center mt-6 "">Rechercher</button>
+          <button type="submit" class=" border-black rounded-xl ml-6 bg-green-400 rounded-xl px-4  text-center mt-6 "">Crée Favoris</button>
         </a>
         <table class="w-4/5 bg-yellow-400 text-cyan-600 m-auto mb-8">
             <tr class="border border-black">
