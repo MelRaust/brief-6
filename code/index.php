@@ -178,9 +178,14 @@
               </button>
             </td>
             <td class="border border-black bg-violet-400 text-black text-center">
-            <button class="bg-red-400 border border-black hover:bg-stone-500">
-            <i class="fa-solid fa-trash-can"></i>
-            </button>
+                <form action="delete.php" method="GET">
+                    <button name="id" value="<?php echo $favori['id_fav'] ?>" type="submit" class="bg-red-400 border border-black hover:bg-stone-500">
+
+                    <i class="fa-solid fa-trash-can"></i>
+                    </button>
+
+                </form>
+            
             </td>
          
         </tr>
@@ -189,6 +194,8 @@
         ?>  
         </table>
     </section>
+
+
     
 </body>
 </html>
