@@ -7,6 +7,6 @@
   <link href="css/output.css" rel="stylesheet">
 </head>
 <body class="bg-slate-500">
-<header>
-        <h1 class="text-lime-600 text-center text-4xl underline" >Mes favoris</h1>
+<header >
+        <h1 class="text-lime-600 text-center text-4xl underline" >Mes favoris</h1>  
 </header>
